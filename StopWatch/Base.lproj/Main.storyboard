@@ -72,7 +72,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="timeLabel" destination="3T1-I4-9DB" id="1to-gh-P3e"/>
+                        <outlet property="timeLabel" destination="3T1-I4-9DB" id="Hlt-Pl-603"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
