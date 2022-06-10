@@ -16,6 +16,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQz-dc-EHQ">
+                                <rect key="frame" x="107" y="502" width="200" height="70"/>
+                                <color key="backgroundColor" red="1" green="0.82745098039215681" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="6fX-Cb-ebZ"/>
+                                    <constraint firstAttribute="width" constant="200" id="fL0-c0-4AJ"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="START">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="40"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="start" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mh5-sS-A7i"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MVQ-dJ-rz9">
                                 <rect key="frame" x="107" y="592" width="200" height="70"/>
                                 <color key="backgroundColor" red="1" green="0.82745098039999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -43,20 +59,21 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQz-dc-EHQ">
-                                <rect key="frame" x="107" y="502" width="200" height="70"/>
-                                <color key="backgroundColor" red="1" green="0.82745098039215681" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CbX-vH-oFZ">
+                                <rect key="frame" x="107" y="682" width="200" height="70"/>
+                                <color key="backgroundColor" red="1" green="0.84880354020979021" blue="0.24363527097902099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="6fX-Cb-ebZ"/>
-                                    <constraint firstAttribute="width" constant="200" id="fL0-c0-4AJ"/>
+                                    <constraint firstAttribute="width" constant="200" id="dLG-5b-6kT"/>
+                                    <constraint firstAttribute="height" constant="70" id="tzG-4l-miE"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="START">
+                                <buttonConfiguration key="configuration" style="plain" title="RESET">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="40"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="start" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mh5-sS-A7i"/>
+                                    <action selector="reset" destination="BYZ-38-t0r" eventType="touchUpInside" id="p7c-bZ-emK"/>
+                                    <action selector="stop" destination="BYZ-38-t0r" eventType="touchUpInside" id="2fg-hH-vuL"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -65,10 +82,12 @@
                         <constraints>
                             <constraint firstItem="3T1-I4-9DB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="8it-1j-Ye8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MVQ-dJ-rz9" secondAttribute="bottom" constant="200" id="FoM-nl-hpr"/>
+                            <constraint firstItem="CbX-vH-oFZ" firstAttribute="top" secondItem="MVQ-dJ-rz9" secondAttribute="bottom" constant="20" id="OdN-he-hzr"/>
                             <constraint firstItem="MVQ-dJ-rz9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UDN-6l-uaK"/>
                             <constraint firstItem="WQz-dc-EHQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YpC-1c-O5N"/>
                             <constraint firstItem="3T1-I4-9DB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="di1-rJ-EUu"/>
                             <constraint firstItem="MVQ-dJ-rz9" firstAttribute="top" secondItem="WQz-dc-EHQ" secondAttribute="bottom" constant="20" id="nox-DK-1ei"/>
+                            <constraint firstItem="CbX-vH-oFZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t2f-hB-LnI"/>
                         </constraints>
                     </view>
                     <connections>

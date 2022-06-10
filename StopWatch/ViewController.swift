@@ -44,5 +44,14 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func reset(){
+        count = 0
+        timeLabel.text = "0.0"
+        
+        if timer.isValid{
+            timer.invalidate()
+        }
+    }
+    
 }
 
