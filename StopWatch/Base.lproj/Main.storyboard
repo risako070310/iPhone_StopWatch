@@ -48,17 +48,6 @@
                                     <action selector="stop" destination="BYZ-38-t0r" eventType="touchUpInside" id="p4C-Yv-daI"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3T1-I4-9DB">
-                                <rect key="frame" x="107.5" y="244" width="199" height="81"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="81" id="LJT-b5-ZAO"/>
-                                    <constraint firstAttribute="width" constant="199" id="ihl-j2-qGZ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="51"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CbX-vH-oFZ">
                                 <rect key="frame" x="107" y="682" width="200" height="70"/>
                                 <color key="backgroundColor" red="1" green="0.84880354020979021" blue="0.24363527097902099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -76,6 +65,23 @@
                                     <action selector="stop" destination="BYZ-38-t0r" eventType="touchUpInside" id="2fg-hH-vuL"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3T1-I4-9DB">
+                                <rect key="frame" x="107.5" y="244" width="199" height="81"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="LJT-b5-ZAO"/>
+                                    <constraint firstAttribute="width" constant="199" id="ihl-j2-qGZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="51"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PERFECT!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBH-ik-XI9">
+                                <rect key="frame" x="136.5" y="188" width="141" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.86274509799999999" green="0.0" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -86,11 +92,14 @@
                             <constraint firstItem="MVQ-dJ-rz9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UDN-6l-uaK"/>
                             <constraint firstItem="WQz-dc-EHQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YpC-1c-O5N"/>
                             <constraint firstItem="3T1-I4-9DB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="di1-rJ-EUu"/>
+                            <constraint firstItem="3T1-I4-9DB" firstAttribute="top" secondItem="fBH-ik-XI9" secondAttribute="bottom" constant="20" id="kvD-bh-FuR"/>
                             <constraint firstItem="MVQ-dJ-rz9" firstAttribute="top" secondItem="WQz-dc-EHQ" secondAttribute="bottom" constant="20" id="nox-DK-1ei"/>
+                            <constraint firstItem="fBH-ik-XI9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sGF-fx-iOK"/>
                             <constraint firstItem="CbX-vH-oFZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t2f-hB-LnI"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="hanteiLabel" destination="fBH-ik-XI9" id="18u-Vq-hyq"/>
                         <outlet property="timeLabel" destination="3T1-I4-9DB" id="Hlt-Pl-603"/>
                     </connections>
                 </viewController>
